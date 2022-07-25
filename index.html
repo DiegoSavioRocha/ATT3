@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Formulario </title>
+        <meta charset="utf-8">
+    </head>
+
+    <body bgcolor="black" background="img/Fundo.webp" >
+
+        <h2 align="center"> <th> <font color="black"> Torneio de Robos </font> </th> </h2>
+        <p align="center"> <font color="black"> Venha colocar a sua invenção contra o dos seus oponentes </font> </p>
+        <p align="center"> <font color="black"> Coloque sua Informações Abaixo </font> </p>
+
+        <table border="0" align="center" bgcolor="#F57967">
+            
+            <tr> <td>
+
+                <fieldset>
+
+                    <legend> Informe os Dados </legend>
+                    <form action="enviar.php" method="post" name="Registro">
+
+                        <table border="0" cellpadding="5">
+
+                            <tr>
+                                <td> <label> Nome: </label> </td>
+                                <td> <input type="text" id="nome" name="nome" maxlength="50" placeholder="Digite seu Nome Completo" required> </td>
+                            </tr>
+                            <tr>
+                                <td> <Label> E-mail: </Label></td>
+                                <td> <input type="email" id="mail" name="mail" placeholder="Digite um E-mail Valido" required> </td>
+                            </tr>
+                            <tr>
+                                <td> <Label> Telefone: </Label> </td>
+                                <td> <input type="tel" id="telefone" name="telefone" maxlength="11" placeholder="Digite seu Telefone de Contato" required> </td>
+                            </tr>
+                            <tr>
+                                <td> <label> Nome de sua Maquina: </label> </td>
+                                <td> <input type="text" id="maquina" name="maquina" placeholder="Digite o nome de sua criação" required> </td>
+                            </tr>
+                            <tr>
+                                <td> <label> Especificações: </label></td>
+                                <td> <input type="text" id="especifico" name="especifico" maxlength="100"> </td>
+                            </tr>
+                            <tr>
+                                <td> <Label> Endereço do Torneio: </Label> </td>
+                                <td> <select id="endereço" name="endereço" required>
+                                    <option value="" selected="selected">--Selecione--</option>
+                                    <optgroup label="Norte">
+                                        <option value="TO"> Tocantins </option>
+                
+                                    </optgroup>
+                                    <optgroup label="Nordeste">
+                                        <option value="PI"> Piauí </option>
+                                        <option value="PE"> Pernambuco </option>
+                                        <option value="SE"> Sergipe </option>
+                                     
+                                    </optgroup>
+                                    <optgroup label="sul">
+                                        <option value="RS"> Rio Grande do Sul </option>
+                                        <option value="SC"> Santa Catarina </option>
+                                        <option value="PR"> Paraná </option>
+                
+                                    </optgroup>
+                                    <optgroup label="Sudeste">
+                                        <option value="RJ"> Rio de Janeiro </option>
+                                        <option value="MG"> Minas Gerais </option>
+                                        <option value="SP"> São Paulo </option>
+                
+                                    </optgroup>
+                                    <optgroup label="Centro-Oeste">
+                                        <option value="MS"> Mato Grosso do Sul </option>
+                                        <option value="GO"> Goiás </option>
+                                        <option value="MT"> Mato Grosso </option>
+                
+                                    </optgroup>
+
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td> <label> Complemento: </label> </td>
+                                <td> <input type="text" id="comple" name="comple" maxlength="500"> </td>
+                            </tr>
+                            <tr>
+                                <label></label><td> Data de Inscrição </td></label>
+                                <td> <input type="date" id="data" name="data" required> </td>
+                            </tr>
+                        </table>
+                </fieldset>
+                </br> </br>
+                <!-- Imagen do Robo -->
+                <fieldset>
+                    <legend> Imagem da Maquina </legend> 
+                        <table>
+                            
+                            <tr>
+                                <td> <label> Coloque a Foto da sua Maquina: </label></td>
+                                <td> <input type="file" id="foto" name="foto" required> </td>
+                                <td> <img src="img/wallpaper.jpg" width="200" border="1"> </td>
+                            </tr>
+                        </table>
+                </fieldset>
+                </BR>
+                <!-- Sobre o Robo -->
+                            <fieldset >
+                                <legend> Sobre o Robo </legend> 
+                                <table>
+                            
+                            <tr>
+                                <td> <Label> Coloque o Equipamento que seu Robo Suporta </Label> </td>
+                                <br/>
+                                <td align="left">
+                                    <label><input type="checkbox" id="Corpo" name="Corpo">
+                                    Corpo a Corpo </label>
+                                    <br/>
+                                    <label><input type="checkbox" id="Atirador" name="Atirador">
+                                    Atirador </label>
+                                    <br/>
+                                    <label><input type="checkbox" id="Franco" name="Franco">
+                                    Franco Atirador </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <label> Peças: </label></td>
+                                <td align="left">
+                                    <label><input type="checkbox" id="novas" name="novas">
+                                    Novas </label>
+                                    <br/>
+                                    <label><input type="checkbox" id="semi-novas" name="semi-novas">
+                                    Semi-Novas </label>
+                                    <br/>
+                                    <label><input type="checkbox" id="desgastada" name="desgastadas">
+                                    Desgastada </label>
+                                    <br/>
+                                    <label><input type="checkbox" id="veterana" name="veterano">
+                                    Veterano de Batalha</label>
+                                </td>
+                            </tr>
+                            <tr>
+                            <th>
+                                <input type="submit" id="enviar" name="enviar" value="Enviar">
+                                <input type="reset" id="limpar" name="limpar" value="Limpar">
+                                <br/>
+                            </th>
+                            </tr>
+                        </table>
+                    </form>
+            </td>
+            </tr>
+
+        </table>
+        <h5> 2022 - Copyright develop by Diego Savio</h5>
+    </body>
+
+</html>
